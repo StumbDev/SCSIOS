@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCSIOS NIOS 1.0</title>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            switch(event.key) {
+                case 'F1':
+                    event.preventDefault();
+                    alert('Help');
+                    break;
+                case 'F2':
+                    event.preventDefault();
+                    alert('System Info');
+                    break;
+                case 'F9':
+                    event.preventDefault();
+                    alert('Setup Defaults');
+                    break;
+                case 'F10':
+                    event.preventDefault();
+                    alert('Save and Exit');
+                    break;
+                case 'Escape':
+                    event.preventDefault();
+                    alert('Exit');
+                    break;
+            }
+        });
+    </script>
+</head>
+<body>
+    <div style="font-family: 'Courier New', Courier, monospace; background-color: gray; color: black; width: 100%; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="border: 2px solid black; padding: 20px; width: 80%; max-width: 800px; background-color: lightgray;">
+            <h1 style="text-align: center; background-color: navy; color: white; padding: 10px;">NiOS Setup Utility</h1>
+            <hr style="border: 1px solid black;">
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <p><strong>System Summary</strong></p>
+                    <p><strong>Config</strong></p>
+                    <p><strong>Date/Time</strong></p>
+                    <p><strong>Security</strong></p>
+                    <p><strong>Startup</strong></p>
+                    <p><strong>Restart</strong></p>
+                </div>
+                <div style="border-left: 1px solid black; padding-left: 20px;">
+                    <p><strong>System Information</strong></p>
+                    <p>Product Name: Mig MPC II</p>
+                    <p>BIOS Version: 1.60.3</p>
+                    <p>Serial Number: </p>
+                    MPCII-1234-5678-9012
+                    <p>UUID: 12345678-1234-1234-1234-1234567890ab</p>
+                </div>
+            </div>
+            <hr style="border: 1px solid black;">
+            <p>bootloader variants:</p>
+            <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+                <button style="background-color: white; border: 1px solid black; padding: 10px; display: flex; align-items: center;">
+                    <img src="../assets/Scsi_logo.svg.png" alt="SCSI Logo" style="width: 24px; height: 24px; margin-right: 10px;">
+                    Boot SCSI OS
+                </button>
+                <button style="background-color: white; border: 1px solid black; padding: 10px; display: flex; align-items: center;">
+                    <img src="../assets/firewire.svg" alt="Firewire Logo" style="width: 24px; height: 24px; margin-right: 10px;">
+                    Boot Firewire OS
+                </button>
+                <button style="background-color: white; border: 1px solid black; padding: 10px; display: flex; align-items: center;">
+                    <img src="../assets/iomega-7.svg" alt="Iomega Logo" style="width: 24px; height: 24px; margin-right: 10px;">
+                    Boot Iomega OS
+                </button>
+                <button style="background-color: white; border: 1px solid black; padding: 10px; display: flex; align-items: center;">
+                    <img src="../assets/usb-3.svg" alt="USB Logo" style="width: 24px; height: 24px; margin-right: 10px;">
+                    Boot USB OS
+                </button>
+            </div>
+            <div style="text-align: center;">
+                <p>F1: Help  F2: System Info  F9: Setup Defaults  F10: Save and Exit  Esc: Exit</p>
+                <button style="background-color: white; border: 1px solid black; padding: 10px; display: flex; align-items: center; margin-top: 20px;">
+                    <img src="../assets/quit.svg" alt="Quit Logo" style="width: 24px; height: 24px; margin-right: 10px;">
+                    Quit
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

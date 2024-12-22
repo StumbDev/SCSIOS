@@ -1,0 +1,74 @@
+# C++ specific
+*.o
+*.obj
+*.so
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.dylib
+*.pdb
+*.ilk
+*.idb
+*.DS_Store
+
+# CMake specific
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+
+# Win32 CPP specific
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.user
+*.ncb
+*.suo
+*.sdf
+*.opensdf
+*.vcproj
+*.vcproj.*.user
+ipch/
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*.tmp
+*.log
+*.vs/
+*.code-workspace
+
+# WinDriver specific
+*.sys
+*.inf
+*.cat
+*.pdb
+
+# Objective-C specific
+*.hmap
+*.ipa
+*.xcuserstate
+*.xcworkspace
+*.xcuserdata
+*.xcodeproj
+*.xcconfig
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+*.xcuserdatad/
+*.DS_Store
+*.swp
+*.lock
+*.xcscmblueprint
+
+# Deno TS JS specific
+node_modules/
+*.log
+deno.lock
